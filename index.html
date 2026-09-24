@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Binu ❤️</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#09040a;color:#fff;font-family:system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+.bg{position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 50% 10%,#571b3d 0,#210b1d 38%,#09040a 75%)}
+.glow{position:fixed;width:240px;height:240px;border-radius:50%;background:#ff4f9a;filter:blur(100px);opacity:.18;z-index:-1;left:-80px;top:20%}
+.glow2{left:auto;right:-100px;top:60%;background:#a83cff}
+.wrap{width:min(900px,92%);margin:auto;padding:70px 0}
+.hero{text-align:center;min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.badge{padding:8px 15px;border:1px solid #ffffff25;border-radius:999px;background:#ffffff0d;color:#ffc2dc;font-size:13px}
+.heart{font-size:78px;animation:pulse 1.6s infinite;margin:22px 0}
+h1{font-size:clamp(42px,9vw,82px);line-height:1;margin:0;background:linear-gradient(90deg,#fff,#ff9fc7,#fff);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:600px;color:#cdbbc6;line-height:1.8;font-size:17px}
+.scroll{margin-top:30px;color:#ff9fc7;font-size:14px}
+.card{margin:25px 0;padding:28px;border:1px solid #ffffff18;border-radius:30px;background:#ffffff09;box-shadow:0 25px 80px #0008;backdrop-filter:blur(15px)}
+.title{font-size:25px;font-weight:800;margin-bottom:15px}
+.voice{text-align:center}
+audio{width:100%;margin:15px 0 5px}
+.note{color:#d7c5d0;line-height:1.8}
+.letter{font-size:17px;line-height:1.95;color:#eee}
+.letter p{margin:0 0 18px}
+.signature{text-align:center;font-size:28px;font-weight:800;color:#ff9fc7}
+footer{text-align:center;color:#806d79;padding:30px}
+.float{position:fixed;bottom:-30px;font-size:18px;animation:rise linear forwards;pointer-events:none;z-index:5}
+@keyframes pulse{50%{transform:scale(1.1)}}@keyframes rise{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="glow"></div><div class="glow glow2"></div>
+<div class="wrap">
+<section class="hero">
+  <div class="badge">A little something from my heart</div>
+  <div class="heart">❤️</div>
+  <h1>I'm Sorry, Binu.</h1>
+  <p>I couldn't put everything I feel into a normal message, so I made this little page for you. Please listen to my voice first.</p>
+  <div class="scroll">↓ keep scrolling ↓</div>
+</section>
+
+<section class="card voice">
+  <div class="title">🎙️ My voice, just for you</div>
+  <div class="note">No perfect words. No excuses. Just me talking honestly to you.</div>
+  <audio controls preload="metadata">
+    <source src="apology-voice.ogg" type="audio/ogg">
+  </audio>
+</section>
+
+<section class="card letter">
+  <div class="title">💌 What I want you to know</div>
+  <p>Binu, I'm genuinely sorry for the things I did and for the ways I hurt you.</p>
+  <p>I know saying “sorry” doesn't magically fix everything. I don't want this apology to be only words. I want my actions to show that I understand where I went wrong and that I'm willing to learn from it.</p>
+  <p>You mean a lot to me. I don't expect you to forget everything immediately, and I don't want to pressure you into anything. I just wanted you to know that I truly regret hurting you.</p>
+  <p>Whatever happens, I'm grateful for the moments, the care, the laughs, and everything we've shared.</p>
+  <div class="signature">I'm really sorry. ❤️</div>
+</section>
+
+<section class="card" style="text-align:center">
+  <div class="title">🌷 One last thing</div>
+  <p class="note">You don't have to answer immediately. Just take your time, listen to my voice, and know that this came from my heart.</p>
+</section>
+<footer>Made with honesty • for Binu ❤️</footer>
+</div>
+<script>
+setInterval(()=>{
+ const e=document.createElement('div');e.className='float';e.textContent=['❤️','💗','💕','♡'][Math.floor(Math.random()*4)];
+ e.style.left=Math.random()*100+'vw';e.style.animationDuration=(5+Math.random()*5)+'s';
+ document.body.appendChild(e);setTimeout(()=>e.remove(),10000);
+},700);
+</script>
+</body>
+</html>
